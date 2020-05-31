@@ -1,4 +1,4 @@
-import React, { useState, Suspense } from "react";
+import React, { useState, Suspense, useRef } from "react";
 import { useSpring, a } from "react-spring";
 import Ticker from "react-ticker";
 import PageVisibility from "react-page-visibility";
@@ -7,14 +7,17 @@ import "./App.css";
 import logo from "./Images/logo.png";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
-const calc2 = (x2, y2) => [
-  x2 - window.innerWidth / 2,
-  y2 - window.innerHeight / 2,
-];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
-const trans2 = (x2, y2) => `translate3d(${x2 / 10}px,${y2 / 10}px,0)`;
 
 export default function App() {
+  const ref = useRef();
+  const handleClick = () => {
+    if (rotateImage) {
+    } else {
+    }
+    setRotateImage(!rotateImage);
+  };
+  const [rotateImage, setRotateImage] = useState(false);
   const [pageIsVisible, setPageIsVisible] = useState(true);
 
   const handleVisibilityChange = (isVisible) => {
@@ -61,10 +64,12 @@ export default function App() {
               }
             >
               <a.img
+                ref={ref}
                 className="logo"
                 src={logo}
                 alt="BLOT-Online-Logo"
                 style={{ transform: props.xy.interpolate(trans1) }}
+                onClick={handleClick}
               />
             </div>
             <div className="footer-scroller2">
