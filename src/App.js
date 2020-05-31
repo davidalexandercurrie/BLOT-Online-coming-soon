@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { useSpring, a } from "react-spring";
 import Ticker from "react-ticker";
 import PageVisibility from "react-page-visibility";
@@ -25,70 +25,78 @@ export default function App() {
     config: { mass: 5, tension: 750, friction: 20 },
   }));
   return (
-    <PageVisibility onChange={handleVisibilityChange}>
-      {pageIsVisible && (
-        <>
-          <div className="header-scroller">
-            <Ticker>
-              {() => (
-                <span className="scrolling-span">
-                  COMING SOON&nbsp;&nbsp;&nbsp;
-                </span>
-              )}
-            </Ticker>
-          </div>
-          <div className="header-scroller2">
-            <Ticker speed={2.5} direction="toRight">
-              {() => (
-                <span className="scrolling-span">COMING SOON&nbsp;&nbsp;</span>
-              )}
-            </Ticker>
-          </div>
-          <div className="header-scroller3">
-            <Ticker speed={2.7}>
-              {() => <span className="scrolling-span">COMING SOON&nbsp;</span>}
-            </Ticker>
-          </div>
-          <div
-            className="container"
-            onMouseMove={({ clientX: x, clientY: y }) =>
-              set({ xy: calc(x, y) })
-            }
-          >
-            <a.img
-              className="logo"
-              src={logo}
-              alt="BLOT-Online-Logo"
-              style={{ transform: props.xy.interpolate(trans1) }}
-            />
-          </div>
-          <div className="footer-scroller2">
-            <Ticker>
-              {() => (
-                <span className="scrolling-span">
-                  COMING SOON&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
-                </span>
-              )}
-            </Ticker>
-          </div>
-          <div className="footer-scroller3">
-            <Ticker speed={2.1} direction="toRight">
-              {() => (
-                <span className="scrolling-span">COMING SOON&nbsp;&nbsp;</span>
-              )}
-            </Ticker>
-          </div>
-          <div className="footer-scroller">
-            <Ticker speed={2}>
-              {() => (
-                <span className="scrolling-span">
-                  COMING SOON&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
-                </span>
-              )}
-            </Ticker>
-          </div>
-        </>
-      )}
-    </PageVisibility>
+    <Suspense>
+      <PageVisibility onChange={handleVisibilityChange}>
+        {pageIsVisible && (
+          <>
+            <div className="header-scroller">
+              <Ticker>
+                {() => (
+                  <span className="scrolling-span">
+                    COMING SOON&nbsp;&nbsp;&nbsp;
+                  </span>
+                )}
+              </Ticker>
+            </div>
+            <div className="header-scroller2">
+              <Ticker speed={2.5} direction="toRight">
+                {() => (
+                  <span className="scrolling-span">
+                    COMING SOON&nbsp;&nbsp;
+                  </span>
+                )}
+              </Ticker>
+            </div>
+            <div className="header-scroller3">
+              <Ticker speed={2.7}>
+                {() => (
+                  <span className="scrolling-span">COMING SOON&nbsp;</span>
+                )}
+              </Ticker>
+            </div>
+            <div
+              className="container"
+              onMouseMove={({ clientX: x, clientY: y }) =>
+                set({ xy: calc(x, y) })
+              }
+            >
+              <a.img
+                className="logo"
+                src={logo}
+                alt="BLOT-Online-Logo"
+                style={{ transform: props.xy.interpolate(trans1) }}
+              />
+            </div>
+            <div className="footer-scroller2">
+              <Ticker>
+                {() => (
+                  <span className="scrolling-span">
+                    COMING SOON&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+                  </span>
+                )}
+              </Ticker>
+            </div>
+            <div className="footer-scroller3">
+              <Ticker speed={2.1} direction="toRight">
+                {() => (
+                  <span className="scrolling-span">
+                    COMING SOON&nbsp;&nbsp;
+                  </span>
+                )}
+              </Ticker>
+            </div>
+            <div className="footer-scroller">
+              <Ticker speed={2}>
+                {() => (
+                  <span className="scrolling-span">
+                    COMING SOON&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                  </span>
+                )}
+              </Ticker>
+            </div>
+          </>
+        )}
+      </PageVisibility>
+    </Suspense>
   );
 }
