@@ -1,0 +1,107 @@
+body,
+html {
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  left: 0;
+  right: 0;
+}
+.footer-scroller {
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  white-space: nowrap;
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+    letter-spacing: 2em;
+    white-space: nowrap;
+  }
+}
+.footer-scroller2 {
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0vh;
+  white-space: nowrap;
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+    letter-spacing: 0.2em;
+    white-space: nowrap;
+  }
+}
+.footer-scroller3 {
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0vh;
+  white-space: nowrap;
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+    letter-spacing: 3.2em;
+    white-space: nowrap;
+  }
+}
+.header-scroller {
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  white-space: nowrap;
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+    letter-spacing: 2em;
+    white-space: nowrap;
+  }
+}
+.header-scroller2 {
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0vh;
+  white-space: nowrap;
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+    letter-spacing: 1em;
+    white-space: nowrap;
+  }
+}
+.header-scroller3 {
+  width: 100vw;
+  margin: 0 auto;
+  position: fixed;
+  top: 0vh;
+  white-space: nowrap;
+  span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 10vh;
+    letter-spacing: 1.2em;
+    white-space: nowrap;
+  }
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30vh;
+  height: 40vh;
+  width: 40vh;
+}
