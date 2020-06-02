@@ -10,6 +10,7 @@
 }
 
 .footer-scroller {
+  color: #4ce0d2ff;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -26,6 +27,7 @@
 }
 
 .footer-scroller2 {
+  color: #136f63ff;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -42,6 +44,7 @@
 }
 
 .footer-scroller3 {
+  color: #22aaa1ff;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -58,6 +61,7 @@
 }
 
 .header-scroller {
+  color: #136f63ff;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -74,6 +78,7 @@
 }
 
 .header-scroller2 {
+  color: #4ce0d2ff;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -90,6 +95,7 @@
 }
 
 .header-scroller3 {
+  color: #22aaa1ff;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
