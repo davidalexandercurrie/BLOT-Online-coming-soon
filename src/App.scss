@@ -1,3 +1,9 @@
+$color1: #041b15ff;
+$color2: #136f63ff;
+$color3: #22aaa1ff;
+$color4: #4ce0d2ff;
+$color5: #84cae7ff;
+
 body,
 html {
 }
@@ -13,6 +19,7 @@ html {
   right: 0;
 }
 .footer-scroller {
+  color: $color4;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -27,6 +34,7 @@ html {
   }
 }
 .footer-scroller2 {
+  color: $color2;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -41,6 +49,7 @@ html {
   }
 }
 .footer-scroller3 {
+  color: $color3;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -55,6 +64,7 @@ html {
   }
 }
 .header-scroller {
+  color: $color2;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -69,6 +79,7 @@ html {
   }
 }
 .header-scroller2 {
+  color: $color4;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
@@ -83,6 +94,7 @@ html {
   }
 }
 .header-scroller3 {
+  color: $color3;
   width: 100vw;
   margin: 0 auto;
   position: fixed;
