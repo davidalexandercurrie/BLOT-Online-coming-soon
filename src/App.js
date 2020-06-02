@@ -7,8 +7,8 @@ import "./App.css";
 import logo from "./Images/logo.png";
 
 const calc = (x, y) => [
-  x - window.innerWidth / 10,
-  y - window.innerHeight / 10,
+  x - window.innerWidth / 1.1,
+  y - window.innerHeight / 1.1,
 ];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
 
