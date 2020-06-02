@@ -6,7 +6,7 @@ import PageVisibility from "react-page-visibility";
 import "./App.css";
 import logo from "./Images/logo.png";
 
-const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
+const calc = (x, y) => [x - window.innerWidth / 4, y - window.innerHeight / 4];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
 
 export default function App() {
@@ -25,7 +25,7 @@ export default function App() {
   };
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
-    config: { mass: 5, tension: 250, friction: 50 },
+    config: { mass: 5, tension: 750, friction: 50 },
   }));
   return (
     <Suspense>
