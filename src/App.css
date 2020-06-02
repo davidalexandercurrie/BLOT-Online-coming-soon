@@ -10,6 +10,8 @@
 }
 
 .footer-scroller {
+  border-top: 0.5em solid black;
+  border-bottom: 0.5em solid black;
   color: #041b15ff;
   width: 100vw;
   margin: 0 auto;
@@ -28,6 +30,8 @@
 }
 
 .footer-scroller2 {
+  border-top: 0.5em solid black;
+  border-bottom: 0.5em solid black;
   color: #136f63ff;
   width: 100vw;
   margin: 0 auto;
@@ -46,6 +50,8 @@
 }
 
 .footer-scroller3 {
+  border-top: 0.5em solid black;
+  border-bottom: 0.5em solid black;
   color: #22aaa1ff;
   width: 100vw;
   margin: 0 auto;
@@ -64,6 +70,8 @@
 }
 
 .header-scroller {
+  border-top: 0.5em solid black;
+  border-bottom: 0.5em solid black;
   color: #136f63ff;
   width: 100vw;
   margin: 0 auto;
@@ -82,6 +90,8 @@
 }
 
 .header-scroller2 {
+  border-top: 0.5em solid black;
+  border-bottom: 0.5em solid black;
   color: #041b15ff;
   width: 100vw;
   margin: 0 auto;
@@ -95,11 +105,13 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 10vh;
-  letter-spacing: 1em;
+  letter-spacing: 0.5em;
   white-space: nowrap;
 }
 
 .header-scroller3 {
+  border-top: 0.5em solid black;
+  border-bottom: 0.5em solid black;
   color: #22aaa1ff;
   width: 100vw;
   margin: 0 auto;
