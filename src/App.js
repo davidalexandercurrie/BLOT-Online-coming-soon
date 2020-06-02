@@ -25,7 +25,7 @@ export default function App() {
   };
   const [props, set] = useSpring(() => ({
     xy: [0, 0],
-    config: { mass: 5, tension: 750, friction: 20 },
+    config: { mass: 15, tension: 750, friction: 50 },
   }));
   return (
     <Suspense>
