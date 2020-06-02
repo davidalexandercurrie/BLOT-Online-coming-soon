@@ -6,7 +6,10 @@ import PageVisibility from "react-page-visibility";
 import "./App.css";
 import logo from "./Images/logo.png";
 
-const calc = (x, y) => [x - window.innerWidth / 4, y - window.innerHeight / 4];
+const calc = (x, y) => [
+  x - window.innerWidth / 10,
+  y - window.innerHeight / 10,
+];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
 
 export default function App() {
