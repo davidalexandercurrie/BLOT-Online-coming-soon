@@ -7,7 +7,7 @@ import "./App.css";
 import logo from "./Images/logo.png";
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
-const trans1 = (x, y) => `translate3d(${x / 20}px,${y / 20}px,0)`;
+const trans1 = (x, y) => `translate3d(${x / 40}px,${y / 40}px,0)`;
 
 export default function App() {
   const ref = useRef();
